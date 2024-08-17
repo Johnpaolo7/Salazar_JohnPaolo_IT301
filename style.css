@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    background-size: cover;
+    background-image: url(pic/31.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: url(pic/bg.png);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 510px;
+    text-align: center;
+    border: solid;
+    border-color: yellow;
+}
+.signup-container {
+    background-image: url(pic/bg.png);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 750px;
+    text-align: center;
+    border: solid;
+    border-color: yellow;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: 25px;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+h4{
+    text-align: center;
+    text-justify: auto;
+    color: white;
+}
+h5{
+    text-align: center;
+    text-justify: auto;
+    color: white;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+}
+p{
+    color: darkgray;
+    text-align: center;
+}
+a{
+    color: red;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="gender"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: yellow;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: yellow;
+    color: red;
+}

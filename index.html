@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Gym Booking Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="pic/31.png" alt="#" style="width: 100px;height:100px;"></h1>
+        <h2>Libis Gym</h2>
+        <h4>Never underestimate the power of <i>Determintaion</i> and <i>Hardwork</i></h4>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <h5>Password must be at least 12 characters long, and including uppercase, lowercase, a number, and a symbol.</h5>
+        </form>
+        <a href="signup.html">Don't have an account?</a>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let password = document.getElementById("password").value;
+
+    let passwordCriteria = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{12,}$/;
+
+    if (passwordCriteria.test(password)) {
+        alert("Logged In Successfully!");
+    } else {
+        alert("Check your password, please.");
+    }
+});
+    </script>
+</body>
+</html>
